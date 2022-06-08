@@ -25,37 +25,43 @@
     </header>
 
     <main class="px-3">
-        <div class="container mt-4 mb-4 shadow-lg rounded" style="background-image: url('asset/bg-diary.png'); background-size: 100% 100%;">
+
+
+        <div class="container mt-5 mb-4 shadow-lg rounded" style="background-color: #598392;">
             <div class="mb-5">
                 <form id="form">
-                    <div class="row g-3">
-                        <div class="col-md-4" style="margin-left: 8.5%; margin-top: 7%;">
+                    <div class="row g-1">
+                        <div class="col-md-4" style="margin-left: 9%; margin-top: 3%;">
                           <label for="title" class="form-label"></label>
-                          <input type="text" class="form-control" id="lastName" placeholder="Judul" value="" required>
+                          <input type="text" class="form-control" id="title" placeholder="Apa yang kamu inginkan ?" value="" required>
                         </div>
-                
-                    <div class="col-md-2" style="margin-top: 7%;">
+                    <div class="col-md-2" style="margin-top: 3%; margin-left: 30%;">
                         <label for="kategori" class="form-label"></label>
                         <select class="form-select" id="kategori" name="kategori" for="kategori">
-                            <option selected>Mood</option>
-                            <option>Bahagia</option>
-                            <option>Marah</option>
-                            <option>Sedih</option>
+                            <option selected>Belum</option>
+                            <option>Bismillah</option>
+                            <option>Terpenuhi</option>
                         </select>
+                    </div>                   
+                    <div class="form-group row mt-3">
+                        <label class="col-sm-1 mt-3 col-form-label" for="title"></label>
+                        <div class="col-sm-10">
+                            <input type="file" accept="image/*" class="form-control" id="exampleFormControlFile">
+                        </div>
                     </div>
-                    <div class="col-md-2" style="margin-top: 7%;">
-                        <label for="zip" class="form-label"></label>
-                        <input type="date" class="date form-control text-light" name="" id="" value="">
+                    <div class="form-group row mt-3">
+                        <label for="title" class="form-label"></label>
+                        <input type="text" class="form-control" id="title" placeholder="Apa yang kamu inginkan ?" value="" required>
                     </div>
                     <div class="form-group row mt-3">
                         <label class="col-sm-1 mt-3 col-form-label" for="title"></label>
                         <div class="col-sm-10">
-                            <textarea class="form-control" id="description" name="description" cols="100" rows="20" placeholder="Tulis disini..."></textarea>
+                            <textarea class="form-control" id="description" name="description" cols="100" rows="3" placeholder="Catatan..."></textarea>
                         </div>
                     </div>
                     <div class="text-end my-auto mb-5">
-                        <a class="btn btn-danger bi bi-back px-3 mt-4" href="./diary.html"> Batal</a>
-                        <button class="btn btn-create bi bi-send-plus-fill px-3 mt-4" style="margin-right: 11%;" type="submit"> Simpan</button>
+                        <a class="btn btn-danger bi bi-back px-3 mt-4" href="./wishlist.html"> Batal</a>
+                        <button class="btn btn-create bi bi-send-plus-fill text-dark px-3 mt-4" style="background-color:white; margin-right: 11%;" type="submit"> Simpan</button>
                     </div>                      
                 </form>
             </div>

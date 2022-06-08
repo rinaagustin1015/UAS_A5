@@ -20,3 +20,12 @@
 .title {
     margin-top: 100%;
 }
+
+.card:hover {
+    background-color: #598392;
+    transition: 1s;
+}
+
+img {
+    cursor: pointer;
+}
