@@ -14,7 +14,7 @@
 
 .date {
     background-color: #598392;
-    height: 50%;
+    height: 100%;
 }
 
 .title {
@@ -28,4 +28,8 @@
 
 img {
     cursor: pointer;
+}
+
+.bg-list {
+    background-color: #598392;
 }

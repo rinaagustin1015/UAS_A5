@@ -18,52 +18,64 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 px-3 justify-content-center mb-md-0">
                 <li><a href="diary.html" class="nav-link px-2 active" style="font-size: medium; color: white;">Diary</a></li>
                 <li><a href="wishlist.html" class="nav-link px-2" style="font-size: medium; color: white;">Wish List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
+                <li><a href="todolist.html" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
+                <li><a href="index.html" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
             </ul>
+            <div class="col-sm-4 d-flex px-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light mx-1" type="submit">Search</button>
+            </div>
         </div>
     </header>
 
     <main class="px-3">
-
-
         <div class="container mt-5 mb-4 shadow-lg rounded" style="background-color: #598392;">
+            <div class="col-3">
+                <a class="blog-header-logo text-white fs-3" style="text-decoration: none;">My Wish List</a>
+            </div>
             <div class="mb-5">
-                <form id="form">
-                    <div class="row g-1">
-                        <div class="col-md-4" style="margin-left: 9%; margin-top: 3%;">
-                          <label for="title" class="form-label"></label>
-                          <input type="text" class="form-control" id="title" placeholder="Apa yang kamu inginkan ?" value="" required>
+                <form id="form" class="">                    
+                    <div class="form-group row g-3 mt-2">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Apa yang kamu inginkan ?" required="required">   
                         </div>
-                    <div class="col-md-2" style="margin-top: 3%; margin-left: 30%;">
-                        <label for="kategori" class="form-label"></label>
-                        <select class="form-select" id="kategori" name="kategori" for="kategori">
-                            <option selected>Belum</option>
-                            <option>Bismillah</option>
-                            <option>Terpenuhi</option>
-                        </select>
-                    </div>                   
+                        <div class="col-sm-2">
+                            <select class="form-select" id="kategori" name="kategori" for="kategori">
+                                <option selected>Belum</option>
+                                <option>Bismillah</option>
+                                <option>Terpenuhi</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="form-group row mt-3">
-                        <label class="col-sm-1 mt-3 col-form-label" for="title"></label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-12">
                             <input type="file" accept="image/*" class="form-control" id="exampleFormControlFile">
                         </div>
-                    </div>
+                    </div>                    
                     <div class="form-group row mt-3">
-                        <label for="title" class="form-label"></label>
-                        <input type="text" class="form-control" id="title" placeholder="Apa yang kamu inginkan ?" value="" required>
-                    </div>
-                    <div class="form-group row mt-3">
-                        <label class="col-sm-1 mt-3 col-form-label" for="title"></label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="description" name="description" cols="100" rows="3" placeholder="Catatan..."></textarea>
+                        <div class="col-sm-12">
+                            <textarea class="form-control" id="description" name="description" rows="3" placeholder="Catatan" rows="3"></textarea>
                         </div>
                     </div>
-                    <div class="text-end my-auto mb-5">
-                        <a class="btn btn-danger bi bi-back px-3 mt-4" href="./wishlist.html"> Batal</a>
-                        <button class="btn btn-create bi bi-send-plus-fill text-dark px-3 mt-4" style="background-color:white; margin-right: 11%;" type="submit"> Simpan</button>
-                    </div>                      
-                </form>
+                    <div class="form-group row g-3 mt-3">
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-text">Harga</span>
+                                <input type="number" step="500" name="rental_rate" class="form-control" id="rental_rate" value="" placeholder="Berapa Sih ?">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="input-group">
+                                <span class="input-group-text">Jumlah</span>
+                                <input type="number" step="500" name="rental_rate" class="form-control" id="rental_rate" value="" placeholder="Mau Berapa ?">
+                            </div>
+                        </div>
+                        <div class="text-end mb-5">
+                            <a class="btn btn-danger bi bi-back mt-4" href="./wishlist.html"> Batal</a>
+                            <button class="btn btn-create bi bi-send-plus-fill text-dark mt-4" style="background-color:white; margin-right: 11%;" type="submit"> Simpan</button>
+                        </div>
+                    </div>
+                </form>                
             </div>
         </div>
     </main>

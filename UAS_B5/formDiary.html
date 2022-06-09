@@ -18,24 +18,30 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 px-3 justify-content-center mb-md-0">
                 <li><a href="diary.html" class="nav-link px-2 active" style="font-size: medium; color: white;">Diary</a></li>
                 <li><a href="wishlist.html" class="nav-link px-2" style="font-size: medium; color: white;">Wish List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
+                <li><a href="todolist.html" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
+                <li><a href="index.html" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
             </ul>
+            <div class="col-sm-4 d-flex px-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light mx-1" type="submit">Search</button>
+            </div>
         </div>
     </header>
 
     <main class="px-3">
-        <div class="container mt-4 mb-4 shadow-lg rounded" style="background-image: url('asset/bg-diary.png'); background-size: 100% 100%;">
-            <div class="mb-5">
-                <form id="form">
-                    <div class="row g-3">
-                        <div class="col-md-4" style="margin-left: 8.5%; margin-top: 7%;">
-                          <label for="title" class="form-label"></label>
-                          <input type="text" class="form-control" id="lastName" placeholder="Judul" value="" required>
+        <div class="container mt-5 mb-4 shadow-lg rounded" style="background-image: url('asset/bg-diary.png'); background-size: 100% 100%;">
+            <form id="form">
+                <div class="form-group row g-3 mt-3">
+                    <div style="margin-top: 7%;">
+                        <div class="col-3 text-center">
+                            <a class="blog-header-logo fs-3" style="color:#598392; text-decoration: none;">My Note</a>
                         </div>
-                
-                    <div class="col-md-2" style="margin-top: 7%;">
-                        <label for="kategori" class="form-label"></label>
+                    </div>
+                        <label class="col-sm-1 col-form-label" for="title"></label>
+                        <div class="col-sm-5">
+                            <input type="text" class="form-control" id="lastName" placeholder="Judul" value="" required>
+                        </div>             
+                    <div class="col-md-2">
                         <select class="form-select" id="kategori" name="kategori" for="kategori">
                             <option selected>Mood</option>
                             <option>Bahagia</option>
@@ -43,8 +49,7 @@
                             <option>Sedih</option>
                         </select>
                     </div>
-                    <div class="col-md-2" style="margin-top: 7%;">
-                        <label for="zip" class="form-label"></label>
+                    <div class="col-md-2">
                         <input type="date" class="date form-control text-light" name="" id="" value="">
                     </div>
                     <div class="form-group row mt-3">
@@ -56,9 +61,9 @@
                     <div class="text-end my-auto mb-5">
                         <a class="btn btn-danger bi bi-back px-3 mt-4" href="./diary.html"> Batal</a>
                         <button class="btn btn-create bi bi-send-plus-fill px-3 mt-4" style="margin-right: 11%;" type="submit"> Simpan</button>
-                    </div>                      
-                </form>
-            </div>
+                    </div>
+                </div>                      
+            </form>            
         </div>
     </main>
 

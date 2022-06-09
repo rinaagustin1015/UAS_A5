@@ -19,26 +19,41 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 px-3 justify-content-center mb-md-0">
                 <li><a href="diary.html" class="nav-link px-2 active" style="font-size: medium; color: white;">Diary</a></li>
                 <li><a href="wishlist.html" class="nav-link px-2" style="font-size: medium; color: white;">Wish List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
-                <li><a href="" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
+                <li><a href="todolist.html" class="nav-link px-2" style="font-size: medium; color: white;">To Do List</a></li>
+                <li><a href="index.html" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
             </ul>
+            <div class="col-sm-4 d-flex px-3">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light mx-1" type="submit">Search</button>
+            </div>
         </div>
     </header>
 
     <main class="px-3">
-    <div class="d-flex align-items-center p-3 my-3 text-dark rounded shadow-sm">
-        <div class="d-flex align-items-center">
-            <div class="col-sm-2 col-md-12 px-2">
-                <h1 class="h6 mb-0 text-dark">Ingin Menambah Cerita Hari ini?</h1>
-            </div>
-            <ul class="nav col-sm-2 col-md-12 col-lg-auto me-lg-auto mb-2 px-5 justify-content-center mb-md-0">
-                <button class="btn-create btn" style="align-items:center;" id="create">
-                    <a href="formDiary.html" style="text-decoration: none; color: white;">Tambahkan</a>
-                </button>
-            </ul>
+        <div class="d-flex align-items-center p-3 my-3 text-dark rounded shadow-sm">
+            <div class="d-flex align-items-center">
+                <div class="col-sm-2 col-md-12 px-2">
+                    <h1 class="h6 mb-0 text-dark">Ingin Menambah Cerita Hari ini?</h1>
+                </div>
+                <ul class="nav col-sm-2 col-md-12 col-lg-auto me-lg-auto mb-2 px-5 justify-content-center mb-md-0">
+                    <button class="btn-create btn" style="align-items:center;" id="create">
+                        <a href="formDiary.html" style="text-decoration: none; color: white;">Tambahkan</a>
+                    </button>
+                </ul>            
             </div>
         </div>
-    
+
+        <div class="d-flex align-items-center p-3 my-3 text-dark rounded shadow-sm">
+            <div class="d-flex align-items-center">                
+                <select class="form-select" aria-label="">
+                    <option selected>Pilih Kategori</option>
+                    <option value="1">Bahagia</option>
+                    <option value="2">Marah</option>
+                    <option value="3">Sedih</option>
+                  </select>
+            </div>
+        </div>
+            
         <div class="my-3 p-3 bg-body rounded shadow-sm">
         <h6 class="border-bottom pb-2 mb-0">Catatan Tersimpan</h6>
         <div class="d-flex text-muted pt-3">
