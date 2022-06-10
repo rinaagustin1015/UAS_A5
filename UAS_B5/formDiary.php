@@ -64,7 +64,7 @@
                         </div>
                     </div>
                     <div class="text-end my-auto mb-5">                        
-                        <a class="btn btn-danger bi bi-x-square-fill px-3 mt-4" href="./diary.html"> Batal</a>
+                        <a class="btn btn-danger bi bi-x-square-fill px-3 mt-4" href="./diary.php"> Batal</a>
                         <button class="btn btn-create bi bi-send-plus-fill px-3 mt-4" style="margin-right: 11%;" type="submit"> Simpan</button>
                     </div>
                 </div>                      

@@ -76,7 +76,7 @@
                             </div>
                         </div>
                         <div class="text-end mb-5">
-                            <a class="btn btn-danger bi bi-x-square-fill mt-4" href="./wishlist.html"> Batal</a>
+                            <a class="btn btn-danger bi bi-x-square-fill mt-4" href="./wishlist.php"> Batal</a>
                             <button class="btn btn-create bi bi-send-plus-fill text-dark mt-4" style="background-color:white; margin-right: 11%;" type="submit"> Simpan</button>
                         </div>
                     </div>

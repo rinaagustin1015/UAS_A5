@@ -41,7 +41,7 @@
                     <h1 class="h6 mb-0 text-dark">Apa yang perlu kamu lakukan?</h1>
                 </div>
                 <div class="col-auto">
-                    <a class="btn btn-secondary me-md-3" href="formTodolist.html" style="background-color: #598392;"><span><i class="bi bi-bookmark-plus-fill text-light"></i></span> Tambahkan</a>
+                    <a class="btn btn-secondary me-md-3" href="formTodolist.php" style="background-color: #598392;"><span><i class="bi bi-bookmark-plus-fill text-light"></i></span> Tambahkan</a>
                 </div>
             </div>
         </div>
