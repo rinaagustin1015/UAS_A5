@@ -11,25 +11,29 @@
     <title>DearMe</title>
     </head>
 <body>
-    <header class="blog-header py-2" style="background-color: #598392;">
-        <div class="row d-flex align-items-center">
-            <div class="col-2 px-5">
-                <a class="blog-header-logo text-white" style="text-decoration: none;">DearMe?</a>
+    <header class="py-2">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color:#598392;">
+            <div class="container-fluid px-4">
+                <a class="navbar-brand blog-header-logo text-white fs-3 fw-bolder" href="index.html">DearMe?</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link" href="diary.php" style="font-size: medium; color: white;">Diary</a></li>
+                    <li class="nav-item"><a class="nav-link" href="wishlist.php" style="font-size: medium; color: white;">Wish List</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bolder active" href="todolist.php" style="font-size: medium; color: #598392;">To Do List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html" style="font-size: medium; color: white;">Keluar</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Cari...">
+                </form>
+                </div>
             </div>
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 px-3 justify-content-center mb-md-0">
-              <li><a href="diary.html" class="nav-link px-2" style="font-size: medium; color: white;">Diary</a></li>
-              <li><a href="wishlist.html" class="nav-link px-2" style="font-size: medium; color: white;">Wish List</a></li>
-              <li><a href="todolist.html" class="nav-link px-2 active fw-bolder" style="font-size: medium;">To Do List</a></li>
-              <li><a href="index.html" class="nav-link px-2" style="font-size: medium; color: white;">Keluar</a></li>
-          </ul>
-          <div class="col-sm-4 d-flex px-3">
-            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light mx-1" type="submit">Search</button>
-        </div>
-        </div>
+        </nav>
     </header>
 
-    <main class="px-3">
+    <main class="px-3 py-5">
         <div class="container mt-5 mb-4 shadow-lg rounded" style="background-color: #598392;">
             <div class="col-3">
                 <a class="blog-header-logo text-white fs-3" style="text-decoration: none;">My to-do list</a>
